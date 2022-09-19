@@ -1,0 +1,218 @@
+/* Sintaxis en css */
+
+.verde{
+    color:rgb(44, 47, 44);
+}
+.lista{list-style-type: none;
+}
+.lista li { font-style: italic;
+font-family: 'Roboto', sans-serif;
+}
+
+#menubarra{
+    align-items: center;
+    border: solid;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;  
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction:row;  
+    justify-content:space-around;
+    list-style: none;
+
+}
+
+main h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.ImagenSN{
+    border-radius: 4em;
+    width: 50em;
+    height: 50em;
+    margin: 1em 20em; 
+    padding: 0.5em 1em;
+}
+a{
+    text-decoration: none;
+}
+#overflow{
+    overflow-x: hidden;
+}
+ 
+.fondoindex{background-image: url(../assets/img/fondoindexpequeno.jpeg); 
+}
+.fondoservicios{background-image: url(../assets/img/imagenmontanafondo.jpg);
+}
+.fondofaq{background-image: url(../assets/img/fondofaq.jpeg);
+}
+.fondonosotros{background-image: url(../assets/img/fondo\ nosotros.jpeg);
+}  
+.fondocontacto{background-image: url(../assets/img/fondo\ nosotros.jpeg);
+}  
+
+.title{
+    text-align: center;
+}
+.articulo{
+    background-color: rgb(125, 67, 67);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:20em;
+    margin: 2em 2em; 
+    padding: 1em 1em;
+    border: solid 0.3em rgb(23, 20, 20);
+    border-radius: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+.titulo-pagina{
+    color: rgb(9, 9, 9);
+    font-family: 'Roboto', sans-serif; 
+}
+.img-ancho{
+    width: 100%;
+}
+.imgparavolveralindex{
+    width: 2.4em;
+    position: sticky; 
+    top: 2em;
+    left: 2em;
+    padding: 0.5em;
+    border-radius: 5em;
+}
+.botones-formulario{
+    display: inline;    
+    width: 5em;
+    background-color: rgb(57, 69, 69);
+}
+ 
+.header-sticky{
+    position: sticky;
+    top: 0px;
+    }
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+}
+.sobre-nosotros-txt{
+    text-align: center;
+    border: solid;
+    border-radius: 0.5em;
+}
+#colormenubarra{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    transition: all 2s;
+}
+#colormenubarra:hover{
+    transform: scale(1.4,1.4);
+}
+
+/*redes*/
+
+@keyframes Botonwtspp{
+    0%{
+        transform: scale(1,1);
+        top: 100vh;
+    }
+    25%{
+        transform: scale(1.1 , 1.1);
+        top: 95vh;
+    }
+    50%{
+        transform: scale(1.2 , 1.2);
+        top: 90vh;
+    }
+
+    100%{
+        transform: scale(1,1);
+        top: 100vh;
+    }
+}
+
+#rrss{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#rrss-svg{
+    color: rgb(30, 19, 19);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#rrss-svg:hover{
+    transform: scale(1.4,1.4);
+    transition: 1s; 
+    
+}
+.Wpp-fixed{
+    background: radial-gradient(rgb(54, 120, 54), rgb(2, 179, 2));
+    color: rgb(192, 80, 15);
+    border-radius: 4em; 
+    width: 2.3em;
+    height: 2.3em;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    animation-name: Botonwtspp;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+ }
+
+
+
+
+
+
+
+#copyright{
+    text-align: center;
+    color: black;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#centrar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*mobile first*/
+/*responsive celular*/
+
+@media only screen and (max-width: 420px){
+
+}
+/*responsive tablet*/
+
+@media only screen and (min-width: 421px) and (max-width: 1199){
+
+}
+/*resposnive escritorio*/
+
+@media screen and (min-width: 1200px){
+
+}
+
+
+
+
+/*{
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    overflow: hiden
+}
