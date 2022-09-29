@@ -13,68 +13,69 @@
     <title>Conacto</title>
 </head>
 <body id="overflow" class="fondocontacto">
-    <header class="header-sticky">
+    <header class="headerfixed">
         <nav>
-            <ul id="menubarra">
+            <ul class="NavBar">
                 <a href="../index.html">
-                    <img class="imgparavolveralindex" src="../assets/img/torrelogomenu.jpeg" alt="">
+                    <img src="../assets/img/torrelogomenu.jpeg" alt="">
                    </a>
-                <li><a id="colormenubarra" href="./nosotros.html">Nosotros</a></li>
-                <li><a id="colormenubarra" href="./servicios.html">Servicios</a></li>
-                <li><a id="colormenubarra" href="./contacto.html">Contacto</a></li>
-                <li><a id="colormenubarra" href="./Faq.html">FAQ</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./Faq.html">FAQ</a></li>
+                <li><a href="./Grid.html">Grid</a></li>
             </ul>
         </nav>
     </header>
     <main class="contacto" >
         <section>
-            <H1>Contacto</H1>
-            <form action="">
-                <div>
-                    <!--Campo para el nombre-->
-                    <label for="nombreApellido">Nombre y Apellido</label>
-                    <input type="text" id="nombreApeliddo" name="nombreApellido" placeholder="nombreApellido"> 
-                </div>
-                <div>
-                    <!--Campo para el telefono-->
-                    <label for="telefono">Telefono</label>
-                    <input type="tel" id="telefono" name="telefonoCelular" placeholder="+54112345678">
-                </div>
-                <div>
-                    <!--Campo para correo-->
-                    <label for="correoElectronico">Correo electronico</label>
-                    <input type="email" id="correoElectronico" name="correoEletronico" placeholder="correoElectronico">
-                </div>
-                <div>
-                    <!--Campo para el servicio-->
-                    <select name="servicios" id="servicios">
-                        <option value="Asesoria">Asesoria</option>
-                        <option value="armadodeCarpeta">Armado de carpeta</option>
-                        <option value="busquedaActasitalianas">Busqueda actas Italianas</option>
-                    </select>
-                </div>
-                <div>
-                    <!--Campo para elegir fecha-->
-                    <label for="turno">Turno</label>
-                    <input type="datetime-local" id="Turno" name="turno">
-                </div>
-                <div>
-                    <!--Campo para dejar comentario-->
-                    <label for="comentarios">Comentarios</label>
-                    <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <!--Suscribirse-->
-                    <label for="newsletter">subscribirse al newsletter</label>
-                    <input type="checkbox" id="newsletter" name="suscripcion" value="acepta">
-                </div>
-                <div >
-                    <!--Boton de enviar-->
-                    <input type="reset" value="borrar" class="botones-formulario">
-                    <!--Boton de resetar-->
-                    <input type="submit" value="enviar" class="botones-formulario" >
-                </div>
-            </form>
+            <H1 class="titulo-pagina">Contacto</H1>
+                <form class="ListaContacto" action="">
+                    <div>
+                        <!--Campo para el nombre-->
+                        <label for="nombreApellido">Nombre y Apellido</label>
+                        <input type="text" id="nombreApeliddo" name="nombreApellido" placeholder="nombreApellido"> 
+                    </div>
+                    <div>
+                        <!--Campo para el telefono-->
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" id="telefono" name="telefonoCelular" placeholder="+54112345678">
+                    </div>
+                    <div>
+                        <!--Campo para correo-->
+                        <label for="correoElectronico">Correo electronico</label>
+                        <input type="email" id="correoElectronico" name="correoEletronico" placeholder="correoElectronico">
+                    </div>
+                    <div>
+                        <!--Campo para el servicio-->
+                        <select name="servicios" id="servicios">
+                            <option value="Asesoria">Asesoria</option>
+                            <option value="armadodeCarpeta">Armado de carpeta</option>
+                            <option value="busquedaActasitalianas">Busqueda actas Italianas</option>
+                        </select>
+                    </div>
+                    <div>
+                        <!--Campo para elegir fecha-->
+                        <label for="turno">Turno</label>
+                        <input type="datetime-local" id="Turno" name="turno">
+                    </div>
+                    <div>
+                        <!--Campo para dejar comentario-->
+                        <label for="comentarios">Comentarios</label>
+                        <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <!--Suscribirse-->
+                        <label for="newsletter">subscribirse al newsletter</label>
+                        <input type="checkbox" id="newsletter" name="suscripcion" value="acepta">
+                    </div>
+                    <div >
+                        <!--Boton de enviar-->
+                        <input type="reset" value="borrar" class="botones-formulario">
+                        <!--Boton de resetar-->
+                        <input type="submit" value="enviar" class="botones-formulario" >
+                    </div>
+                </form>
         </section>
         <section >
             <h2>Ubicacion</h2>
