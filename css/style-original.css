@@ -1,0 +1,510 @@
+/* Sintaxis en css */
+
+.lista li { font-style: italic;
+font-family: 'Roboto', sans-serif;
+}
+/*FAQNAVBAR*/
+header nav{
+    position: sticky;
+    display: flex;
+    gap: 50px;
+    justify-content:flex-end;
+    align-items: center;
+    top: 0px;
+}
+.headerfixed{
+    position: sticky;
+    /*ver lo de fixed*/
+    top: 0px;
+
+    }
+.NavBar{
+    align-items: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;  
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction:row;  
+    justify-content:flex-end;
+    gap: 100px;
+    list-style: none;
+}
+Nav a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    transition: all 2s;
+}
+Nav list a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    transition: all 2s;
+}
+Nav ul a img{
+    display: flex;
+    justify-content: flex-start;
+    width: 2.4em;
+    position: sticky; 
+    top: 2em;
+    left: 2em;
+    padding: 0.5em;
+    border-radius: 5em;
+}
+.colormenubarra{
+    text-decoration:black
+}
+.colormenubarra:hover{
+    transform: scale(1.4,1.4);
+}
+-------------------------------
+
+main h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.ImagenSN{
+    border-radius: 4em;
+    width: 50em;
+    height: 50em;
+    margin: 1em 20em; 
+    padding: 0.5em 1em;
+}
+a{
+    text-decoration: none;
+}
+#overflow{
+    overflow-x: hidden;
+}
+ 
+.fondoindex{background-image: url(../assets/img/fondoindexpequeno.jpeg); 
+}
+.fondoservicios{background-image: url(../assets/img/imagenmontanafondo.jpg);
+}
+.fondofaq{background-image: url(../assets/img/fondofaq.jpeg);
+}
+.fondonosotros{background-image: url(../assets/img/fondo\ nosotros.jpeg);
+}  
+.fondocontacto{background-image: url(../assets/img/fondo\ nosotros.jpeg);
+}  
+
+.title{
+    text-align: center;
+}
+/*sobre nosotros*/
+.titulo-pagina{
+    color: rgb(9, 9, 9);
+    font-family: 'Roboto', sans-serif; 
+    display: flex;
+    justify-content: center;
+}
+.sectionSN{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.DiviNDEX{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+.formato-letras{
+    color:rgb(14, 15, 14);
+}
+
+
+.img-ancho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.imgparavolveralindex{
+    width: 2.4em;
+    position: sticky; 
+    top: 2em;
+    left: 2em;
+    padding: 0.5em;
+    border-radius: 5em;
+}
+
+ 
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+}
+.sobre-nosotros-txt{
+    text-align: center;
+    border: solid;
+    border-radius: 0.5em;
+}
+
+
+/*redes*/
+
+@keyframes Botonwtspp{
+    0%{
+        transform: scale(1,1);
+        top: 100vh;
+    }
+    25%{
+        transform: scale(1.1 , 1.1);
+        top: 95vh;
+    }
+    50%{
+        transform: scale(1.2 , 1.2);
+        top: 90vh;
+    }
+
+    100%{
+        transform: scale(1,1);
+        top: 100vh;
+    }
+}
+
+#rrss{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#rrss-svg{
+    color: rgb(30, 19, 19);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#rrss-svg:hover{
+    transform: scale(1.4,1.4);
+    transition: 1s; 
+    
+}
+.Wpp-fixed{
+    background: radial-gradient(rgb(54, 120, 54), rgb(2, 179, 2));
+    color: rgb(192, 80, 15);
+    border-radius: 4em; 
+    width: 2.3em;
+    height: 2.3em;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    animation-name: Botonwtspp;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+ }
+ /*SERVICIOS*/
+
+.listaServicios{
+    background-color: rgb(122, 109, 109);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:20em;
+    margin: 2em 2em; 
+    padding: 1em 1em;
+    border: solid 0.3em rgb(23, 20, 20);
+    border-radius: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Contacto*/    
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botones-formulario{
+    display: inline;    
+    width: 5em;
+    background-color: rgb(41, 43, 43);
+    text-decoration: solid;
+    color: white;
+}
+.ListaContacto{
+    background:fixed    
+}
+/*FAQ*/
+
+.ListaFaq{
+    background-color: rgb(122, 109, 109);
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    width:20em;
+    margin: 2em 2em; 
+    padding: 1em 1em;
+    border: solid 0.3em rgb(23, 20, 20);
+    border-radius: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+.lista{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*INDEX*/   
+.Publicidad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Grid Sobre nosotros*/
+.container-grid{
+    display: grid;
+    grid-template-columns: 2c,1fr;
+    grid-template-rows: 5em 10em 10em 6em;
+    grid-template-areas: 
+        "menu menu "
+        "contenido  publicidad"
+        "pie pie pie";
+    grid-row-gap: 1em;
+}
+
+.header-grid{
+    grid-area: menu;
+}
+.main-grid{
+    grid-area: contenido;
+}
+.aside-grid{
+    grid-area: publicidad;
+    width: 2.4em;
+    position: sticky; 
+    top: 2em;
+    left: 2em;
+    padding: 0.5em;
+    border-radius: 5em;
+    
+}
+.footer-grid{
+    grid-area: pie;
+}
+
+
+--------------------------------
+
+
+
+#copyright{
+    text-align: center;
+    color: black;
+}
+
+#centrar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*.overflow{
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    overflow: hiden
+}*/
+
+/*Grids*/
+
+.container-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);  
+    height: 100vh;
+    background-image: url(../assets/img/fondo-grids-2.jpeg); /* Imagen */
+    background-color: #0C94F5; /* Color */
+    background-blend-mode: hard-light; /* Efecto */
+}
+.header-grid{ 
+    display: grid;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+}
+.main-grid{ 
+    display: grid;
+    grid-column: 1 / 5;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /*background-image: url(../assets/img/fondo-servicios-grids1.jpeg)*/;
+}
+.aside-grid{ 
+    display: grid;
+    grid-column: 3 / 4 ;
+    grid-row: 3 / 4 ; 
+}
+.div-grid{
+    display: grid;
+    grid-column: 1 / 3 ;
+    grid-row: 3 / 4;
+}
+.footer-grid{ 
+    display: grid;
+    grid-column: 2/4;
+    grid-row: 4 / 5 ;
+}
+/*tablet*/
+@media  (max-width: 768px ){
+    .container-grid{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);  
+    height: 100vh;
+    }
+    .header-grid{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;}
+    .main-grid{ 
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;}
+    .aside-grid{
+        grid-column: 1 / 2 ;
+        grid-row: 3 / 4 ; }
+    .div-grid{ 
+        grid-column: 2/3;
+        grid-row: 4 / 5 ;
+    }
+    .footer-grid{
+        grid-column: 2/3;
+        grid-row: 5 / 6 ;}
+    }
+
+/*celular*/
+@media  (min-width: 320px) and (max-width: 576px){
+        .container-grid{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(6,1fr);  
+        height: 100vh;
+        }
+        .header-grid{
+            grid-column: 1 / 1;
+            grid-row: 1 / 1;}
+        .main-grid{ 
+            grid-column: 1 / 1;
+            grid-row: 2/3;}
+        .aside-grid{
+            grid-column: 1 / 1 ;
+            grid-row: 3 / 4 ; }
+        .div-grid{ 
+            grid-column: 1/1;
+            grid-row: 4 / 5 ;
+        }
+        .footer-grid{
+            grid-column: 1 / 1;
+            grid-row: 5 / 6 ;}
+        }
+/*celular*/
+@media (max-width: 992px){
+    .container-grid{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);  
+    height: 100vh;
+    }
+    .header-grid{
+        grid-column: 1 / 3;
+        grid-row: 1 / 1;}
+    .main-grid{ 
+        grid-column: 1 / 3;
+        grid-row: 2/3;}
+    .aside-grid{
+        grid-column: 2 / 3 ;
+        grid-row: 3 / 4 ; }
+    .div-grid{ 
+        grid-column: 2 / 3;
+        grid-row: 4 / 5 ;
+    }
+    .footer-grid{
+        grid-column: 1 / 3;
+        grid-row: 5 / 6 ;}
+    }
+    /*Dektop*/
+    @media (min-width: 1200px){
+        .container-grid{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(6,1fr);  
+        height: 100vh;
+        }
+        .header-grid{
+            grid-column: 1 / 3;
+            grid-row: 1 / 1;}
+        .main-grid{ 
+            grid-column: 1 / 3;
+            grid-row: 2/3;}
+        .aside-grid{
+            grid-column: 2 / 3 ;
+            grid-row: 3 / 4 ; }
+        .div-grid{ 
+            grid-column: 2 / 3;
+            grid-row: 4 / 5 ;
+        }
+        .footer-grid{
+            grid-column: 1 / 3;
+            grid-row: 5 / 6 ;}
+        }
+
+
+/*bootstrap*/
+.bg-propio{
+    background: none;
+justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*prueba 2 grids
+.container-grid{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-area:
+    "header header header "
+    "main main main"
+    "aside aside aside"
+    "div div div "
+    "footer footer footer";
+    margin: 100px;
+    top: 100px;
+    border: 100px;
+    padding: 100;
+}
+.header-grid{ 
+    display: grid;
+    grid-area: header;
+
+}
+.main-grid{ 
+    display: grid;
+    grid-area: main;
+}
+.aside-grid{ 
+    display: grid;
+    grid-area: aside;   
+}
+.footer-grid{ 
+    display: grid;
+    grid-area: footer;
+}
+.div-grid{
+    display: grid;
+    grid-area: div;
+}
